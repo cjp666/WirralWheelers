@@ -1,0 +1,34 @@
+@page
+@model RideArchiveModel
+@{
+    ViewData["Title"] = "Ride Archive page";
+}
+
+@functions {
+    public string GetClass(string level) {
+        if (level.Equals("A")) {
+            return "red-ride";
+        }
+        if (level.Equals("B")) {
+            return "blue-ride";
+        }
+        if (level.Equals("C")) {
+            return "green-ride";
+        }
+        return "purple-ride";
+    }
+}
+
+<div class="row pt-4">
+    <div class="col">
+        @foreach(var ride in Model.Rides) {
+            <div class="card @GetClass(@ride.Level) mb-2">
+                <div class="card-body">
+                    <h5 class="card-title">@ride.Date.ToString("dd MMMMM yyyy") - @ride.Title</h5>
+                    <h6 class="card-subtitle mb-2">@ride.Description</h6>
+                    <p class="pb-0 mb-0">Ride Leader: @ride.RideLeader</p>
+                </div>
+            </div>
+        }
+    </div>    
+</div>

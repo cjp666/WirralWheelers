@@ -13,18 +13,7 @@ namespace WirralWheelers.Pages
 
         public void OnGet()
         {
-            Rides.Add(new Ride {
-                Title = "Christmas Lunch - 107 Dining Room, Heswall",
-                Date = new DateTime(2017, 12, 11),
-                StartLocation = "Nets",
-                RideLeader = "Alan",
-                Level = "D",
-                Description = "This is a D- level ride, leaving Net's Café for Xmas lunch"
-            });
-        }
-
-        public string GetClass(string level) {
-            return "green-ride";
+            Rides = RideList.Current().ToList();
         }
     }
 }
