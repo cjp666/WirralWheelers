@@ -22,5 +22,9 @@ namespace WirralWheelers.Pages
                 Description = "This is a D- level ride, leaving Net's Café for Xmas lunch"
             });
         }
+
+        public string GetClass(string level) {
+            return "green-ride";
+        }
     }
 }

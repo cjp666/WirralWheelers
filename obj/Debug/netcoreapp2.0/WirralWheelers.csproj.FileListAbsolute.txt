@@ -1,0 +1,10 @@
+C:\Users\Chris\Source\Repos\ww\WirralWheelers\obj\Debug\netcoreapp2.0\WirralWheelers.csproj.CoreCompileInputs.cache
+C:\Users\Chris\Source\Repos\ww\WirralWheelers\obj\Debug\netcoreapp2.0\WirralWheelers.AssemblyInfoInputs.cache
+C:\Users\Chris\Source\Repos\ww\WirralWheelers\obj\Debug\netcoreapp2.0\WirralWheelers.AssemblyInfo.cs
+C:\Users\Chris\Source\Repos\ww\WirralWheelers\bin\Debug\netcoreapp2.0\WirralWheelers.deps.json
+C:\Users\Chris\Source\Repos\ww\WirralWheelers\bin\Debug\netcoreapp2.0\WirralWheelers.runtimeconfig.json
+C:\Users\Chris\Source\Repos\ww\WirralWheelers\bin\Debug\netcoreapp2.0\WirralWheelers.runtimeconfig.dev.json
+C:\Users\Chris\Source\Repos\ww\WirralWheelers\bin\Debug\netcoreapp2.0\WirralWheelers.dll
+C:\Users\Chris\Source\Repos\ww\WirralWheelers\bin\Debug\netcoreapp2.0\WirralWheelers.pdb
+C:\Users\Chris\Source\Repos\ww\WirralWheelers\obj\Debug\netcoreapp2.0\WirralWheelers.dll
+C:\Users\Chris\Source\Repos\ww\WirralWheelers\obj\Debug\netcoreapp2.0\WirralWheelers.pdb
