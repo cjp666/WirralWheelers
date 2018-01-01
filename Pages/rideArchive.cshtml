@@ -22,11 +22,13 @@
 <div class="row pt-4">
     <div class="col">
         @foreach(var ride in Model.Rides) {
-            <div class="card @GetClass(@ride.Level) mb-2">
+            <div class="card ride-details @GetClass(@ride.Level) mb-2">
                 <div class="card-body">
-                    <h5 class="card-title">@ride.Date.ToString("dd MMMMM yyyy") - @ride.Title</h5>
-                    <h6 class="card-subtitle mb-2">@ride.Description</h6>
-                    <p class="pb-0 mb-0">Ride Leader: @ride.RideLeader</p>
+                    <a asp-page="rideDetails" asp-route-id="@ride.Id">
+                        <h5 class="card-title">@ride.Date.ToString("dd MMMMM yyyy") - @ride.Title</h5>
+                        <h6 class="card-subtitle mb-2">@ride.Description</h6>
+                        <p class="pb-0 mb-0">Ride Leader: @ride.RideLeader</p>
+                    </a>
                 </div>
             </div>
         }

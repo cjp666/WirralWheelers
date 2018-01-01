@@ -6,9 +6,16 @@ namespace WirralWheelers.Pages
 {
     public static class RideList
     {
+        public static Ride Ride(int id)
+        {
+            return All().Single(r => r.Id == id);
+        }
+
         public static IEnumerable<Ride> Current()
         {
-            return All().Where(r => r.Date >= DateTime.Now.Date);
+            return All()
+                .Where(r => r.Date >= DateTime.Now.Date)
+                .OrderBy(r => r.Date);
         }
 
         public static IEnumerable<Ride> Archived()
@@ -21,6 +28,24 @@ namespace WirralWheelers.Pages
         public static IEnumerable<Ride> All()
         {
             var rides = new List<Ride> {
+                new Ride
+                {
+                    Title = "Hollywell",
+                    Date = new DateTime(2017, 11, 5),
+                    StartLocation = "Eureka",
+                    RideLeader = "Mike",
+                    Level = "B",
+                    Description = "This is a B level ride, leaving Eureka Café for Hollywell"
+                },
+                new Ride
+                {
+                    Title = "Hollywell",
+                    Date = new DateTime(2017, 12, 3),
+                    StartLocation = "Nets",
+                    RideLeader = "Alan",
+                    Level = "B",
+                    Description = "This is a B level ride, leaving Net's Café for Hollywell"
+                },
                 new Ride
                 {
                     Title = "Christmas Lunch - 107 Dining Room, Heswall",
