@@ -12539,15 +12539,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chris\\Source\\Repos\\ww\\WirralWheelers\\WirralWheelers.csproj",
+      "projectUniqueName": "c:\\Users\\Chris\\Source\\Repos\\ww\\WirralWheelers\\WirralWheelers.csproj",
       "projectName": "WirralWheelers",
-      "projectPath": "C:\\Users\\Chris\\Source\\Repos\\ww\\WirralWheelers\\WirralWheelers.csproj",
+      "projectPath": "c:\\Users\\Chris\\Source\\Repos\\ww\\WirralWheelers\\WirralWheelers.csproj",
       "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chris\\Source\\Repos\\ww\\WirralWheelers\\obj\\",
+      "outputPath": "c:\\Users\\Chris\\Source\\Repos\\ww\\WirralWheelers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

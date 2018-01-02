@@ -1,0 +1,110 @@
+@page
+@model Charity2017EntryForm
+@{
+    ViewData["Title"] = "Charity2017EntryForm";
+}
+
+<div class="row mt-4">
+    <div class="col blog-main">
+        <div class="blog-post">
+            <h2 class="blog-post-title">Wirral Wheelers Church Hill Challenge Sunday 29th April 2018</h2>
+            <p>The Church Hill Challenge is a round route, Starting and finishing in Waverton, and heading south into the Wales / Cheshire borders before turning up the Ceiriog Valley and climbing out up Church Hill, comprising mainly of lanes and minor roads with a total distance of approximately 75 miles.
+            The event is <strong>NOT</strong> a race and riders are invited to complete the course within 7 hours.
+            The course is all on public roads which are not closed for the event and riders must therefore ride with due care and respect for other road users.
+            Full refreshments will be provided at all controls.
+            Full route details and advisory notes will be emailed out approximately 2 weeks prior to the event.
+            All riders will be sent out gpx download instructions.</p>
+            <h3>Raising funds for the I.C.U Ward Alder Hey Childrens Hospital</h3>
+        </div>
+    </div>
+</div>
+
+<form method="POST">
+    <div asp-validation-summary="All"></div>
+    <div class="form-row">
+        <div class="col">
+            <div class="form-group">
+                <label for="rider1FirstName">First Rider - First Name</label>
+                <input asp-for="FirstRiderFirstName" type="text" class="form-control" id="rider1FirstName" placeholder="First rider's first name" required>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="rider1Surname">Surname</label>
+                <input asp-for="FirstRiderSurname" type="text" class="form-control" id="rider1Surname" placeholder="Surname">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="rider1Dob">Date of Birth</label>
+                <input asp-for="FirstRiderDob" type="text" class="form-control" id="rider1Dob" placeholder="dd/mm/yyyy">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col">
+            <div class="form-group">
+                <label for="rider2FirstName">Second Rider - First Name</label>
+                <input asp-for="SecondRiderFirstName" type="text" class="form-control" id="rider2FirstName" placeholder="Second riders first name" required>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="rider2Surname">Surname</label>
+                <input asp-for="SecondRiderSurname" type="text" class="form-control" id="rider2Surname" placeholder="Surname">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="rider2Dob">Date of Birth</label>
+                <input asp-for="SecondRiderDob" type="text" class="form-control" id="rider2Dob" placeholder="dd/mm/yyyy">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col">
+            <div class="form-group">
+                <label for="leadRiderAddress1">Lead Rider's Address</label>
+                <input asp-for="LeadRiderAddress1" type="text" class="form-control" id="leadRiderAddress1" placeholder="Address line 1">
+                <input asp-for="LeadRiderAddress2" type="text" class="form-control" id="leadRiderAddress2" placeholder="Address line 2">
+                <input asp-for="LeadRiderAddress3" type="text" class="form-control" id="leadRiderAddress3" placeholder="Address line 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col">
+            <div class="form-group">
+                <label for="leadRiderPostcode">Postcode</label>
+                <input asp-for="LeadRiderPostcode" type="text" class="form-control" id="leadRiderPostcode" placeholder="Postcode">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="leadRiderTelephone">Telephone</label>
+                <input asp-for="LeadRiderTelephone" type="text" class="form-control" id="leadRiderTelephone" placeholder="Telephone">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col">
+            <div class="form-group">
+                <label for="leadRiderEmail">Email</label>
+                <input asp-for="LeadRiderEmail" type="email" class="form-control" id="leadRiderEmail" placeholder="name@example.com">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col">
+            <div class="form-group">
+                <label for="leadRiderEmailConfirm">Confirm</label>
+                <input asp-for="LeadRiderEmailConfirm" type="email" class="form-control" id="leadRiderEmailConfirm" placeholder="Confirm email">
+            </div>
+        </div>
+    </div>
+    
+</form>

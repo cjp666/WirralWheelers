@@ -26,6 +26,13 @@
 </head>
 
 <body>
+@functions {
+    public string IsActive(string page)
+    {
+        return @ViewData["Title"].Equals(page) ? "active" : "";
+    }
+}
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
         <a class="navbar-brand" href="/index">
             <img src="~/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -38,37 +45,36 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class='nav-item @IsActive("Home")'>
                     <a class="nav-link" href="/index">Home
-                        <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class='nav-item @IsActive("Rides")'>
                     <a class="nav-link" href="/rides">Rides</a>
                 </li>
-                <li class="nav-item">
+                <li class='nav-item @IsActive("RideArchive")'>
                     <a class="nav-link" href="/rideArchive">Ride Archive</a>
                 </li>
-                <li class="nav-item">
+                <li class='nav-item @IsActive("ProposedRides")'>
                     <a class="nav-link" href="/proposedRides">Proposed Rides</a>
                 </li>
-                <li class="nav-item">
+                <li class='nav-item @IsActive("Gallary")'>
                     <a class="nav-link" href="/gallary">Gallary</a>
                 </li>
-                <li class="nav-item">
+                <li class='nav-item @IsActive("Contact")'>
                     <a class="nav-link" href="/contact">Contact</a>
                 </li>
-                <li class="nav-item">
+                <li class='nav-item @IsActive("About")'>
                     <a class="nav-link" href="/about">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">Charity 2016</a>
+                <li class='nav-item @IsActive("Charity2016")'>
+                    <a class="nav-link" href="/charity2016">Charity 2016</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">Charity 2017</a>
+                <li class='nav-item @IsActive("Charity2017")'>
+                    <a class="nav-link" href="/charity2017">Charity 2017</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">Charity 2018</a>
+                <li class='nav-item @IsActive("Charity2018")'>
+                    <a class="nav-link" href="/charity2018">Charity 2018</a>
                 </li>
             </ul>
         </div>
@@ -81,6 +87,7 @@
     </main>
 
     <footer role="footer" class="footer">
+        <hr>
         <div class="row">
             <div class="col-1"></div>
             <div class="col-3">
