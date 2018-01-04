@@ -37,42 +37,47 @@
 <div class="row mt-4">
     <div class="col blog-main">
         <div class="blog-post">
-            <p class="blog-post-meta">By: @Model.Ride.Comments1By</p>
-            @Html.Raw(@Model.Ride.Comments1)
-
-            @if (@Model.Ride.Comment1Photos.Count() > 0) {
+            @if(@Model.Ride.Comments1 != "") {
+                <p class="blog-post-meta">By: @Model.Ride.Comments1By</p>
                 <div class="row">
                     <div class="col">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-                            <ol class="carousel-indicators">
-                                @for(var index = 0; index < @Model.Ride.Comment1Photos.Count(); index++) {
-                                    var className = "";
-                                    @if (index == 0) { className = "active"; }
-                                    <li data-target="#myCarousel" data-slide-to=@index.ToString() class="@className"></li>
-                                }
-                            </ol>
-                            <div class="carousel-inner" role="listbox">
-                                @for(var index = 0; index < @Model.Ride.Comment1Photos.Count(); index++)
-                                {
-                                    var className = "";
-                                    @if (index == 0) { className = "active"; }
-                                    var photo = @Model.Ride.Comment1Photos[index];
-                                    <div class="carousel-item @className">
-                                        <img src="~/gallary/@Model.Ride.Id/@photo" alt="" class="d-block w-100" />
-                                    </div>
-                                }
+                        @Html.Raw(@Model.Ride.Comments1)
+                    </div>
+                    @if (@Model.Ride.Comment1Photos.Count() > 0) {
+                        <div class="col">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                                <ol class="carousel-indicators">
+                                    @for(var index = 0; index < @Model.Ride.Comment1Photos.Count(); index++) {
+                                        var className = "";
+                                        @if (index == 0) { className = "active"; }
+                                        <li data-target="#myCarousel" data-slide-to=@index.ToString() class="@className"></li>
+                                    }
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    @for(var index = 0; index < @Model.Ride.Comment1Photos.Count(); index++)
+                                    {
+                                        var className = "";
+                                        @if (index == 0) { className = "active"; }
+                                        var photo = @Model.Ride.Comment1Photos[index];
+                                        <div class="carousel-item @className">
+                                            <img src="~/gallary/@Model.Ride.Id/@photo" alt="" class="d-block w-100" />
+                                        </div>
+                                    }
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    }
                 </div>
             }
 
             @if(@Model.Ride.Comments2 != "") {
                 <hr />
                 <p class="blog-post-meta">By: @Model.Ride.Comments2By</p>
-                @Html.Raw(@Model.Ride.Comments2)
-                @if (@Model.Ride.Comment2Photos.Count() > 0) {
-                    <div class="row">
+                <div class="row">
+                    <div class="col">
+                        @Html.Raw(@Model.Ride.Comments2)
+                    </div>
+                    @if (@Model.Ride.Comment2Photos.Count() > 0) {
                         <div class="col">
                             <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="3000">
                                 <ol class="carousel-indicators">
@@ -95,8 +100,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                }
+                    }
+                </div>
             }
         </div>
     </div>
