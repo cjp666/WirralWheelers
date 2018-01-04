@@ -67,7 +67,7 @@
         <div class="col">
             <div class="form-group">
                 <label for="leadRiderAddress1">Lead Rider's Address</label>
-                <input asp-for="LeadRiderAddress1" type="text" class="form-control" id="leadRiderAddress1" placeholder="Address line 1">
+                <input asp-for="LeadRiderAddress1" type="text" class="form-control" id="leadRiderAddress1" placeholder="Address line 1" autocomplete="shipping street-address">
                 <input asp-for="LeadRiderAddress2" type="text" class="form-control" id="leadRiderAddress2" placeholder="Address line 2">
                 <input asp-for="LeadRiderAddress3" type="text" class="form-control" id="leadRiderAddress3" placeholder="Address line 3">
             </div>
@@ -78,13 +78,13 @@
         <div class="col">
             <div class="form-group">
                 <label for="leadRiderPostcode">Postcode</label>
-                <input asp-for="LeadRiderPostcode" type="text" class="form-control" id="leadRiderPostcode" placeholder="Postcode">
+                <input asp-for="LeadRiderPostcode" type="text" class="form-control" id="leadRiderPostcode" placeholder="Postcode" autocomplete="shipping postal-code">
             </div>
         </div>
         <div class="col">
             <div class="form-group">
                 <label for="leadRiderTelephone">Telephone</label>
-                <input asp-for="LeadRiderTelephone" type="text" class="form-control" id="leadRiderTelephone" placeholder="Telephone">
+                <input asp-for="LeadRiderTelephone" type="text" class="form-control" id="leadRiderTelephone" placeholder="Telephone" autocomplete="tel">
             </div>
         </div>
     </div>
@@ -93,7 +93,7 @@
         <div class="col">
             <div class="form-group">
                 <label for="leadRiderEmail">Email</label>
-                <input asp-for="LeadRiderEmail" type="email" class="form-control" id="leadRiderEmail" placeholder="name@example.com">
+                <input asp-for="LeadRiderEmail" type="email" class="form-control" id="leadRiderEmail" placeholder="name@example.com"autocomplete="email">
             </div>
         </div>
     </div>

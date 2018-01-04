@@ -12540,11 +12540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Chris\\Source\\Repos\\ww\\WirralWheelers\\WirralWheelers.csproj",
+      "projectUniqueName": "C:\\Users\\Chris\\Source\\Repos\\ww\\WirralWheelers\\WirralWheelers.csproj",
       "projectName": "WirralWheelers",
-      "projectPath": "c:\\Users\\Chris\\Source\\Repos\\ww\\WirralWheelers\\WirralWheelers.csproj",
+      "projectPath": "C:\\Users\\Chris\\Source\\Repos\\ww\\WirralWheelers\\WirralWheelers.csproj",
       "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Chris\\Source\\Repos\\ww\\WirralWheelers\\obj\\",
+      "outputPath": "C:\\Users\\Chris\\Source\\Repos\\ww\\WirralWheelers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
