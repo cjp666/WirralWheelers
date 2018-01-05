@@ -41,17 +41,23 @@ namespace WirralWheelers.Pages
                     RideLeader = "Mike",
                     Level = "B",
                     Description = "This is a B level ride, leaving Eureka Café for Hollywell",
-                    Comments1 = "Club run today was to Hollywell. Met at Eureka Café, ride to Hollywell, 4 of us going over the Holkyns, rest going round and then all meeting for lunch in Hollywell. Three of us returning to Eureka, rest we think went to Nets, a bit of confusion at the end" + 
-                        "<br>"+
-                        "<br>Weather wasn't very nice today, lot of rain and hail, temperature dropped quite a lot on way home",
-                    Comments1By = "Chris",
-                    Comment1Photos = new List<string> {"23316592_479269262459507_8610295377980888031_n.jpg", "23172886_479269282459505_3325978675071000666_n.jpg", "23131833_479269315792835_4883607496712501039_n.jpg"},
-                    Comments2 = "Not sure who was actually leading this ride today! The good news is that we came back into England with one more rider than we left to go to Wales." + 
-                        "<br>Despite a mechanical problem and a bit of repair performed by Gordon we were under way again. On the way home as we crossed the new bridge over the Dee, Graham punctured and we regrouped to assist in a very windy, cold spot. As Chris mentioned there was some confusion and the group obviously split into 3 separate entities. Perhaps it’s a ploy to show the Wirral Wheelers were out in force!" + 
-                        "<br>"+
-                        "<br>Cold heavy showers and the daylight disappeared rapidly today. Winter is on its way.",
-                    Comments2By = "Mike",
-                    Comment2Photos = new List<string> {"23132079_308072233008855_2273640646178294374_n.jpg", "23316546_308072256342186_1665587329030460573_n.jpg", "23131868_308072239675521_8204248102181926748_n.jpg", "23316641_308072249675520_5613686715852285280_n.jpg"},
+                    Comments = new List<RideComment> {
+                        new RideComment {
+                            Comment = "Club run today was to Hollywell. Met at Eureka Café, ride to Hollywell, 4 of us going over the Holkyns, rest going round and then all meeting for lunch in Hollywell. Three of us returning to Eureka, rest we think went to Nets, a bit of confusion at the end" + 
+                                "<br>"+
+                                "<br>Weather wasn't very nice today, lot of rain and hail, temperature dropped quite a lot on way home",
+                            PostedBy = "Chris",
+                            Photos = new List<string> {"23316592_479269262459507_8610295377980888031_n.jpg", "23172886_479269282459505_3325978675071000666_n.jpg", "23131833_479269315792835_4883607496712501039_n.jpg"},
+                        },
+                        new RideComment {
+                            Comment = "Not sure who was actually leading this ride today! The good news is that we came back into England with one more rider than we left to go to Wales." + 
+                                "<br>Despite a mechanical problem and a bit of repair performed by Gordon we were under way again. On the way home as we crossed the new bridge over the Dee, Graham punctured and we regrouped to assist in a very windy, cold spot. As Chris mentioned there was some confusion and the group obviously split into 3 separate entities. Perhaps it’s a ploy to show the Wirral Wheelers were out in force!" + 
+                                "<br>"+
+                                "<br>Cold heavy showers and the daylight disappeared rapidly today. Winter is on its way.",
+                            PostedBy = "Mike",
+                            Photos = new List<string> {"23132079_308072233008855_2273640646178294374_n.jpg", "23316546_308072256342186_1665587329030460573_n.jpg", "23131868_308072239675521_8204248102181926748_n.jpg", "23316641_308072249675520_5613686715852285280_n.jpg"},
+                        }
+                    },
                 },
                 new Ride
                 {

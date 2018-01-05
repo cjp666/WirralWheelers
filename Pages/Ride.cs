@@ -16,12 +16,7 @@ public class Ride
     public string RideLeader { get; set; }
     public string Level { get; set; }
     public string Description { get; set; }
-    public string Comments1 { get; set; } = "";
-    public string Comments1By { get; set; } = "";
-    public List<string> Comment1Photos { get; set; } = new List<string>();
-    public string Comments2 { get; set; } = "";
-    public string Comments2By { get; set; } = "";
-    public List<string> Comment2Photos { get; set; } = new List<string>();
+    public List<RideComment> Comments { get; set; } = new List<RideComment>();
 
     public string Map
     {
@@ -46,4 +41,13 @@ public class Ride
             return $"{Id.ToString()}elevation.jpg";
         }
     }
+}
+
+public class RideComment 
+{
+    public string Comment { get; set; }
+
+    public string PostedBy { get; set; }
+
+    public List<string> Photos { get; set; } = new List<string>();
 }
