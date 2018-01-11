@@ -60,7 +60,9 @@
                                     @if (index == 0) { className = "active"; }
                                     var photo = @comment.Photos[index];
                                     <div class="carousel-item @className">
-                                        <img src="~/gallary/@Model.Ride.Id/@photo" alt="" class="d-block w-100" />
+                                        <a href="~/gallary/@Model.Ride.Id/@photo" data-toggle="lightbox" data-gallery="ride-gallary">
+                                            <img src="~/gallary/@Model.Ride.Id/@photo" alt="" class="d-block w-100" />
+                                        </a>
                                     </div>
                                 }
                             </div>
@@ -74,12 +76,18 @@
 
 <div class="row pt-4">
     <div class="col">
-        <img src="~/rides/@Model.Ride.Map" alt="No map available for this ride" class="w-100" />
+        <a href="~/rides/@Model.Ride.Map" data-toggle="lightbox" data-gallery="ride-gallary" data-title="Ride Map">
+            <img src="~/rides/@Model.Ride.Map" alt="No map available for this ride" class="w-100" />
+        </a>
     </div>
     <div class="col">
-        <img src="~/rides/@Model.Ride.Distance" alt="No distance details are available for this ride" class="w-100" />
+        <a href="~/rides/@Model.Ride.Distance" data-toggle="lightbox" data-gallery="ride-gallary" data-title="Ride Details">
+            <img src="~/rides/@Model.Ride.Distance" alt="No distance details are available for this ride" class="w-100" />
+        </a>
     </div>
     <div class="col">
-        <img src="~/rides/@Model.Ride.Elevation" alt="No elevation details are available for this ride" class="w-100" />
+        <a href="~/rides/@Model.Ride.Elevation" data-toggle="lightbox" data-gallery="ride-gallary" data-title="Ride Elevation">
+            <img src="~/rides/@Model.Ride.Elevation" alt="No elevation details are available for this ride" class="w-100" />
+        </a>
     </div>
 </div>
