@@ -64,6 +64,18 @@ body {
     counter-increment: item;
 }
 
+.red-text {
+    color: rgb(255, 0, 0);
+}
+
+.blue-text {
+    color: rgb(0, 0, 255);
+}
+
+.green-text {
+    color: rgb(0, 128, 0);
+}
+
 .ride-details a {
     color: black;
 }
